@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Coindatabase/static/css/main.95d37e74.css",
+    "main.js": "/Coindatabase/static/js/main.3c69638e.js",
+    "index.html": "/Coindatabase/index.html",
+    "main.95d37e74.css.map": "/Coindatabase/static/css/main.95d37e74.css.map",
+    "main.3c69638e.js.map": "/Coindatabase/static/js/main.3c69638e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95d37e74.css",
+    "static/js/main.3c69638e.js"
+  ]
+}
