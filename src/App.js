@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
+import Screen1 from './Screen1';
+import Screen2 from './Screen2';
+import { useState } from 'react';
 
 function App() {
+  const [screen1, setScreen1]=useState(true);
+  const[coinName, setCoinName]=useState('');
+  
+  const handleClick1=(name)=>{
+    setScreen1(false);
+    setCoinName(name)
+   }
+
+   const handleClick2=()=>{
+    setScreen1(true);
+   }
+
+  
   return (
+   
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      {(screen1===true) ? <Screen1 handleClick1={handleClick1}/> : <Screen2 handleClick2={handleClick2} name={coinName}/>}
+  </div>
   );
 }
 
